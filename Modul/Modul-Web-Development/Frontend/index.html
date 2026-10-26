@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Contoh frontend mandiri: data contoh dan interaksi berjalan di browser. -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cari Layanan</title>
+</head>
+<body>
+  <main>
+    <h1>Daftar Layanan</h1>
+    <!-- Label eksplisit membantu pengguna dan teknologi bantu mengenali input. -->
+    <form id="search-form">
+      <label for="search-input">Cari nama layanan</label>
+      <input id="search-input" type="search">
+      <button type="submit">Cari</button>
+    </form>
+    <!-- aria-live mengumumkan perubahan hasil kepada teknologi bantu. -->
+    <p id="message" aria-live="polite"></p>
+    <ul id="service-list"></ul>
+  </main>
+  <script>
+    // Data ini hanya contoh; aplikasi nyata dapat mengambil data dari API.
+    const services = ["Ruang Praktikum", "Konsultasi", "Peminjaman Perangkat"];
+    const form = document.getElementById("search-form");
+    const input = document.getElementById("search-input");
+    const list = document.getElementById("service-list");
+    const message = document.getElementById("message");
+
+    // Tampilkan semua data ketika halaman pertama kali dibuka.
+    function showServices(items) {
+      list.replaceChildren();
+      message.textContent = items.length ? "" : "Layanan tidak ditemukan.";
+
+      // Buat elemen teks dengan textContent, bukan menyisipkan HTML dari input.
+      items.forEach((name) => {
+        const item = document.createElement("li");
+        item.textContent = name;
+        list.append(item);
+      });
+    }
+
+    // Form submit bekerja ketika tombol ditekan maupun Enter pada input.
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const query = input.value.trim().toLowerCase();
+      const matches = services.filter((name) =>
+        name.toLowerCase().includes(query)
+      );
+      showServices(matches);
+    });
+
+    showServices(services);
+  </script>
+</body>
+</html>

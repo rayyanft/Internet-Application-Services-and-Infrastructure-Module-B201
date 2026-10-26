@@ -1,0 +1,43 @@
+/* Mengatur ukuran elemen agar padding tidak menambah lebar secara mengejutkan. */
+* {
+  box-sizing: border-box;
+}
+
+/* Aturan dasar yang berlaku untuk seluruh halaman. */
+body {
+  margin: 0;
+  color: #1f2937;
+  background-color: #f3f6fa;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header dibuat kontras agar identitas halaman terlihat jelas. */
+.site-header {
+  padding: 2rem 1rem;
+  color: white;
+  background-color: #174a7e;
+  text-align: center;
+}
+
+/* Konten memiliki batas lebar supaya baris teks tetap nyaman dibaca. */
+.content {
+  width: min(100% - 2rem, 48rem);
+  margin: 2rem auto;
+}
+
+/* Kartu memisahkan informasi layanan dari latar halaman. */
+.service-card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  box-shadow: 0 2px 8px #00000018;
+}
+
+/* Pada layar sempit, kurangi jarak agar ruang konten tetap cukup. */
+@media (max-width: 30rem) {
+  .content {
+    width: calc(100% - 1rem);
+    margin: 1rem auto;
+  }
+}
