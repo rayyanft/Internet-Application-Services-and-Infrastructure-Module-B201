@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- This CDN setup is convenient for rapid learning exercises, not production deployment. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Card</title>
+  <!-- Loads Tailwind CSS from CDN for quick prototyping and experimentation. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800">
+  <!-- Utility classes manage card constraints, spacing, backgrounds, and shadows. -->
+  <main class="mx-auto mt-10 max-w-xl p-4">
+    <article class="rounded-xl bg-white p-6 shadow-md">
+      <p class="text-sm font-semibold uppercase tracking-wide text-blue-700">
+        Laboratory
+      </p>
+      <h1 class="mt-2 text-2xl font-bold">Practical Lab Rooms</h1>
+      <p class="mt-3 leading-relaxed">
+        Explore available lab services and prepare prerequisites for your upcoming sessions.
+      </p>
+      <!-- Hover utilities provide visual feedback for interactive button affordance. -->
+      <a class="mt-5 inline-block rounded-lg bg-blue-700 px-4 py-2 text-white hover:bg-blue-800"
+         href="#information">
+        View Details
+      </a>
+    </article>
+  </main>
+</body>
+</html>

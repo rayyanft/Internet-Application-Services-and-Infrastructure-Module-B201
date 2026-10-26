@@ -1,0 +1,43 @@
+/* Configures box-sizing globally so padding and borders do not unexpectedly increase element widths. */
+* {
+  box-sizing: border-box;
+}
+
+/* Base typographic and background rules applied to the entire document. */
+body {
+  margin: 0;
+  color: #1f2937;
+  background-color: #f3f6fa;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Distinctive high-contrast header establishing clear visual identity. */
+.site-header {
+  padding: 2rem 1rem;
+  color: white;
+  background-color: #174a7e;
+  text-align: center;
+}
+
+/* Content container with a maximum width boundary to maintain comfortable reading measure. */
+.content {
+  width: min(100% - 2rem, 48rem);
+  margin: 2rem auto;
+}
+
+/* Elevated card component separating service information from the page background. */
+.service-card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive adjustment for compact viewports to maximize usable content area. */
+@media (max-width: 30rem) {
+  .content {
+    width: calc(100% - 1rem);
+    margin: 1rem auto;
+  }
+}

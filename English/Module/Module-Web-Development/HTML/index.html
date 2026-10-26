@@ -1,0 +1,108 @@
+<!doctype html>
+<!-- This declaration asks the browser to use modern HTML standards mode. -->
+<html lang="en">
+<head>
+  <!-- UTF-8 supports the letters and symbols used on this page. -->
+  <meta charset="utf-8">
+  <!-- The viewport makes page width follow the device screen width. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The document title appears in the browser tab and bookmarks. -->
+  <title>Computer Laboratory Information</title>
+</head>
+<body>
+  <!-- Header introduces the page; nav contains links to important sections. -->
+  <header>
+    <h1>Computer Laboratory</h1>
+    <p>A place for learning, practice, and technology collaboration.</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main marks the unique primary content on this page. -->
+  <main>
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Services</h2>
+      <p>The laboratory provides facilities for learning and research.</p>
+      <ul>
+        <li>Computer access for scheduled practice</li>
+        <li>Student project mentoring</li>
+        <li>Web development workshops</li>
+      </ul>
+      <article>
+        <h3>Workshop announcement</h3>
+        <p>The introductory HTML workshop takes place on <time datetime="2026-10-26">October 26, 2026</time>.</p>
+        <p>Participants should bring a laptop and prepare a code editor.</p>
+      </article>
+      <figure>
+        <!-- Replace src with a project image; alt describes its information. -->
+        <img src="images/laboratory.jpg" alt="Students learning together in a computer laboratory" width="800" height="450">
+        <figcaption>A learning session in the laboratory.</figcaption>
+      </figure>
+    </section>
+
+    <section id="schedule" aria-labelledby="schedule-heading">
+      <h2 id="schedule-heading">Practice Schedule</h2>
+      <table>
+        <caption>Weekly activity schedule</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Activity</th>
+            <th scope="col">Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday</th>
+            <td>HTML fundamentals</td>
+            <td>09:00–11:00</td>
+          </tr>
+          <tr>
+            <th scope="row">Wednesday</th>
+            <td>CSS practice</td>
+            <td>13:00–15:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact and Registration</h2>
+      <p>Contact the team by <a href="mailto:lab@example.org">emailing the laboratory</a>.</p>
+      <!-- This form demonstrates structure only; configure action for a server. -->
+      <form action="#contact" method="get">
+        <p>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </p>
+        <p>
+          <label for="reason">Reason</label>
+          <select id="reason" name="reason">
+            <option value="practice">Join a practice session</option>
+            <option value="information">Request information</option>
+          </select>
+        </p>
+        <p>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+        <button type="submit">Submit sample registration</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer closes the page with copyright information. -->
+  <footer>
+    <p><small>&copy; 2026 Computer Laboratory</small></p>
+  </footer>
+</body>
+</html>

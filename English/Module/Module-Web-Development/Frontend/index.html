@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Self-contained frontend example: client-side mock data and DOM interactivity run directly in the browser. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Services</title>
+</head>
+<body>
+  <main>
+    <h1>Available Services</h1>
+    <!-- Explicit label associations ensure screen readers and assistive tech identify input controls. -->
+    <form id="search-form">
+      <label for="search-input">Search service name</label>
+      <input id="search-input" type="search">
+      <button type="submit">Search</button>
+    </form>
+    <!-- aria-live polite announces asynchronous list updates without interrupting screen reader speech. -->
+    <p id="message" aria-live="polite"></p>
+    <ul id="service-list"></ul>
+  </main>
+  <script>
+    // Demonstration mock dataset; production apps would query a remote API.
+    const services = ["Practical Lab Rooms", "Consultation Hours", "Equipment Lending"];
+    const form = document.getElementById("search-form");
+    const input = document.getElementById("search-input");
+    const list = document.getElementById("service-list");
+    const message = document.getElementById("message");
+
+    // Render items upon initial load and following search filters.
+    function showServices(items) {
+      list.replaceChildren();
+      message.textContent = items.length ? "" : "No services found matching your query.";
+
+      // Safely assign text using textContent rather than injecting unsanitized HTML markup.
+      items.forEach((name) => {
+        const item = document.createElement("li");
+        item.textContent = name;
+        list.append(item);
+      });
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const query = input.value.trim().toLowerCase();
+      const filtered = services.filter((name) =>
+        name.toLowerCase().includes(query)
+      );
+      showServices(filtered);
+    });
+
+    // Populate initial listing on page load.
+    showServices(services);
+  </script>
+</body>
+</html>

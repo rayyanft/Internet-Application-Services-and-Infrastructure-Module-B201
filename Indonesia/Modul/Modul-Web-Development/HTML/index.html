@@ -1,0 +1,108 @@
+<!doctype html>
+<!-- Deklarasi ini meminta browser memakai mode standar HTML modern. -->
+<html lang="id">
+<head>
+  <!-- UTF-8 mendukung huruf dan simbol yang digunakan dalam halaman. -->
+  <meta charset="utf-8">
+  <!-- Viewport membuat lebar halaman mengikuti lebar layar perangkat. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Judul dokumen muncul pada tab browser dan bookmark. -->
+  <title>Informasi Laboratorium Komputasi</title>
+</head>
+<body>
+  <!-- Header menjadi pengantar halaman; nav berisi tautan ke bagian penting. -->
+  <header>
+    <h1>Laboratorium Komputasi</h1>
+    <p>Ruang belajar, praktikum, dan kolaborasi teknologi.</p>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#jadwal">Jadwal</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main menandai konten utama yang unik pada halaman ini. -->
+  <main>
+    <section id="layanan" aria-labelledby="judul-layanan">
+      <h2 id="judul-layanan">Layanan</h2>
+      <p>Laboratorium menyediakan fasilitas untuk kegiatan belajar dan riset.</p>
+      <ul>
+        <li>Akses komputer untuk praktikum terjadwal</li>
+        <li>Pendampingan proyek mahasiswa</li>
+        <li>Workshop pengembangan web</li>
+      </ul>
+      <article>
+        <h3>Pengumuman workshop</h3>
+        <p>Workshop HTML dasar berlangsung pada <time datetime="2026-10-26">26 Oktober 2026</time>.</p>
+        <p>Peserta diminta membawa laptop dan menyiapkan editor kode.</p>
+      </article>
+      <figure>
+        <!-- Ganti src dengan gambar milik proyek; alt menjelaskan informasi gambar. -->
+        <img src="images/laboratorium.jpg" alt="Mahasiswa belajar bersama di laboratorium komputer" width="800" height="450">
+        <figcaption>Kegiatan belajar di laboratorium.</figcaption>
+      </figure>
+    </section>
+
+    <section id="jadwal" aria-labelledby="judul-jadwal">
+      <h2 id="judul-jadwal">Jadwal Praktikum</h2>
+      <table>
+        <caption>Jadwal kegiatan mingguan</caption>
+        <thead>
+          <tr>
+            <th scope="col">Hari</th>
+            <th scope="col">Kegiatan</th>
+            <th scope="col">Waktu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Senin</th>
+            <td>Dasar HTML</td>
+            <td>09.00–11.00</td>
+          </tr>
+          <tr>
+            <th scope="row">Rabu</th>
+            <td>Praktik CSS</td>
+            <td>13.00–15.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="kontak" aria-labelledby="judul-kontak">
+      <h2 id="judul-kontak">Kontak dan Pendaftaran</h2>
+      <p>Hubungi pengelola melalui <a href="mailto:lab@example.org">email laboratorium</a>.</p>
+      <!-- Form ini contoh struktur saja; action perlu disesuaikan dengan layanan server. -->
+      <form action="#kontak" method="get">
+        <p>
+          <label for="nama">Nama lengkap</label>
+          <input id="nama" name="nama" type="text" autocomplete="name" required>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </p>
+        <p>
+          <label for="keperluan">Keperluan</label>
+          <select id="keperluan" name="keperluan">
+            <option value="praktikum">Mengikuti praktikum</option>
+            <option value="informasi">Meminta informasi</option>
+          </select>
+        </p>
+        <p>
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4"></textarea>
+        </p>
+        <button type="submit">Kirim contoh pendaftaran</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer menutup halaman dengan keterangan hak cipta. -->
+  <footer>
+    <p><small>&copy; 2026 Laboratorium Komputasi</small></p>
+  </footer>
+</body>
+</html>
