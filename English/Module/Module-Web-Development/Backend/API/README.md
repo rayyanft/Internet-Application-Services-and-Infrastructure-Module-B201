@@ -45,3 +45,17 @@ Build a data retrieval client that comprehensively handles all real-world condit
 - [MDN: Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [MDN: HTTP Request Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 - [JSONPlaceholder Guide](https://jsonplaceholder.typicode.com/guide/)
+
+## API Approaches: Differences and When to Use Them
+
+An API is a contract that lets software communicate; REST, GraphQL, and SOAP describe different API approaches, while FastAPI is a Python framework that can implement an API.
+
+| Option | What it is | Consider it when |
+| --- | --- | --- |
+| [Basic HTTP API example](./README.md) | A client calls an endpoint with `fetch` and handles its response. | Learning requests, responses, JSON, and HTTP errors before choosing a server framework. |
+| [REST](./REST/README.md) | An architectural style commonly using HTTP resources and standard methods. | Resource-based operations, broad compatibility, and simple HTTP caching are important. |
+| [FastAPI](./FastAPI/README.md) | A Python framework with typed models and generated OpenAPI documentation. | The team uses Python and wants validation and API docs integrated into a service. |
+| [GraphQL](./GraphQL/README.md) | A schema-based query language and execution model for APIs. | Different clients need different selections of related fields and the team can manage its complexity. |
+| [SOAP](./SOAP/README.md) | A structured messaging protocol commonly using XML and formal contracts. | An existing partner or enterprise system specifically requires SOAP/WSDL. |
+
+REST and GraphQL are API design approaches; FastAPI is implementation tooling, so they are not direct alternatives in every sense. A FastAPI service can expose REST-style endpoints. For a small conventional web service, start with REST; select GraphQL for demonstrated client data-shaping needs, or SOAP for a compatibility requirement. Always consider team skills, operational cost, versioning, authentication, authorization, and input validation.

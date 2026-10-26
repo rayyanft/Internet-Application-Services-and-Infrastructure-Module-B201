@@ -68,14 +68,14 @@ Repositori ini berisi kurikulum magang laboratorium komprehensif yang dirancang 
 
 - **English Modules**:
   - [UI/UX Module](./English/Module/Module-UI-UX/README.md)
-  - [Web Development Module](./English/Module/Module-Web-Development/HTML/README.md)
+  - [Web Development Module](./English/Module/Module-Web-Development/README.md)
   - [Mobile Development Module](./English/Module/Module-Mobile-Development/README.md)
   - [Server Infrastructure Module](./English/Module/Module-Server-Infrastructure/README.md)
   - [Practice Project](./English/Practice-Project/README.md)
 
 - **Modul Bahasa Indonesia**:
   - [Modul UI/UX](./Indonesia/Modul/Modul-UI-UX/README.md)
-  - [Modul Web Development](./Indonesia/Modul/Modul-Web-Development/HTML/README.md)
+  - [Modul Web Development](./Indonesia/Modul/Modul-Web-Development/README.md)
   - [Modul Mobile Development](./Indonesia/Modul/Modul-Mobile-Development/README.md)
   - [Modul Infrastruktur Server](./Indonesia/Modul/Modul-Infrastruktur-Server/README.md)
   - [Proyek Praktik](./Indonesia/Practice-Project/README.md)

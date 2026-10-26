@@ -16,9 +16,9 @@ Curriculum Structure:
 ├── Module/
 │   ├── Module-UI-UX/
 │   ├── Module-Web-Development/
-│   │   ├── HTML/ CSS/ TailwindCSS/ JavaScript/
-│   │   ├── Node.js/ React.js/ API/
-│   │   ├── Backend/ Frontend/ Database/
+│   │   ├── Backend/ (API, Backend, JavaScript, Node.js)
+│   │   ├── Frontend/ (CSS, Frontend, HTML, React.js, TailwindCSS)
+│   │   └── Database/ (SQLite/SQL, MySQL, PostgreSQL, Supabase, Firebase)
 │   ├── Module-Mobile-Development/
 │   │   ├── 1-Flutter-Basics/
 │   │   ├── 2-React-Native-Basics/
@@ -33,7 +33,7 @@ Curriculum Structure:
 ```
 
 - `├──` and `└──` illustrate the directory tree structure; names ending with `/` indicate directories.
-- Web subfolders are grouped together for brevity; each name represents an individual learning module.
+- See the [Web Development module README](./Module/Module-Web-Development/README.md) for explanations of each folder's differences and use cases.
 - Each `README.md` file contains learning instructions, while example files in each subfolder demonstrate runnable code.
 
 ## Tools and Lab Preparation
@@ -47,7 +47,7 @@ Curriculum Structure:
 ## Hands-on Learning Steps
 
 1. Begin with the [UI/UX Module](./Module/Module-UI-UX/README.md) to define problem statements and create wireframes.
-2. Follow the web modules sequentially: HTML, CSS, TailwindCSS, JavaScript, Node.js, React.js, and API. The Backend, Frontend, and Database folders provide supplementary practice.
+2. Follow the [Web Development module](./Module/Module-Web-Development/README.md): start with HTML, CSS, and JavaScript; continue with React.js/Tailwind CSS, Node.js, APIs, and databases as needed.
 3. Explore the [Mobile Module](./Module/Module-Mobile-Development/README.md), choose either Flutter or React Native, and proceed to state management and API integration.
 4. Study the [Infrastructure Module](./Module/Module-Server-Infrastructure/README.md) on a local VM before attempting remote deployment.
 5. Work on the [Practice Project](./Practice-Project/README.md) in parallel: implement features as corresponding concepts are learned.

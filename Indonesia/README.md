@@ -16,9 +16,9 @@ Struktur materi:
 ├── Modul/
 │   ├── Modul-UI-UX/
 │   ├── Modul-Web-Development/
-│   │   ├── HTML/ CSS/ TailwindCSS/ JavaScript/
-│   │   ├── Node.js/ React.js/ API/
-│   │   ├── Backend/ Frontend/ Database/
+│   │   ├── Backend/ (API, Backend, JavaScript, Node.js)
+│   │   ├── Frontend/ (CSS, Frontend, HTML, React.js, TailwindCSS)
+│   │   └── Database/ (SQLite/SQL, MySQL, PostgreSQL, Supabase, Firebase)
 │   ├── Modul-Mobile-Development/
 │   │   ├── 1-Flutter-Dasar/
 │   │   ├── 2-React-Native-Dasar/
@@ -33,7 +33,7 @@ Struktur materi:
 ```
 
 - `├──` dan `└──` adalah cara menggambar pohon folder; nama berakhiran `/` menunjukkan direktori.
-- Subfolder web ditulis berkelompok agar diagram ringkas; setiap nama merupakan folder belajar tersendiri.
+- Buka [README Modul Web Development](./Modul/Modul-Web-Development/README.md) untuk penjelasan perbedaan dan kegunaan tiap folder.
 - Berkas `README.md` berisi petunjuk belajar; berkas contoh di subfolder menunjukkan materi yang dapat dijalankan.
 
 ## Alat dan Persiapan Praktikum
@@ -47,7 +47,7 @@ Struktur materi:
 ## Langkah-Langkah Praktikum (Hands-on)
 
 1. Mulai dengan [Modul UI/UX](./Modul/Modul-UI-UX/README.md) untuk merumuskan masalah serta membuat wireframe.
-2. Ikuti modul web berurutan: HTML, CSS, TailwindCSS, JavaScript, Node.js, React.js, lalu API. Folder Backend, Frontend, dan Database memberi latihan tambahan.
+2. Ikuti [Modul Web Development](./Modul/Modul-Web-Development/README.md): mulai dari HTML, CSS, dan JavaScript; lanjutkan ke React.js/TailwindCSS, Node.js, API, dan database sesuai kebutuhan latihan.
 3. Pelajari [Modul Mobile](./Modul/Modul-Mobile-Development/README.md), kemudian pilih Flutter atau React Native dan lanjutkan ke state serta API.
 4. Pelajari [Modul Infrastruktur](./Modul/Modul-Infrastruktur-Server/README.md) pada VM lokal sebelum mencoba deployment.
 5. Kerjakan [Practice Project](./Practice-Project/README.md) paralel: tambahkan fitur setelah konsepnya dipelajari.

@@ -45,3 +45,17 @@ Buat pemanggil API baca yang menangani sukses, status HTTP gagal, JSON tidak ses
 - [MDN: Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [MDN: HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/guide/)
+
+## Pendekatan API: Perbedaan dan Kapan Digunakan
+
+API adalah kontrak agar perangkat lunak dapat berkomunikasi; REST, GraphQL, dan SOAP menjelaskan pendekatan API yang berbeda, sedangkan FastAPI adalah framework Python yang dapat digunakan untuk membuat API.
+
+| Pilihan | Apa itu | Pertimbangkan ketika |
+| --- | --- | --- |
+| [Contoh dasar API HTTP](./README.md) | Client memanggil endpoint dengan `fetch` dan menangani responsnya. | Belajar request, respons, JSON, dan error HTTP sebelum memilih framework server. |
+| [REST](./REST/README.md) | Gaya arsitektur yang umumnya memakai resource HTTP dan metode standar. | Operasi berbasis resource, kompatibilitas luas, dan cache HTTP sederhana dibutuhkan. |
+| [FastAPI](./FastAPI/README.md) | Framework Python dengan model bertipe dan dokumentasi OpenAPI otomatis. | Tim memakai Python dan ingin validasi serta dokumentasi API terintegrasi di layanan. |
+| [GraphQL](./GraphQL/README.md) | Bahasa query berbasis schema dan model eksekusi untuk API. | Client yang berbeda memerlukan pilihan field terkait yang berbeda dan tim mampu mengelola kompleksitasnya. |
+| [SOAP](./SOAP/README.md) | Protokol pesan terstruktur yang umumnya menggunakan XML dan kontrak formal. | Sistem mitra atau enterprise yang sudah ada secara khusus mengharuskan SOAP/WSDL. |
+
+REST dan GraphQL adalah pendekatan desain API; FastAPI adalah alat implementasi, jadi semuanya tidak selalu saling menggantikan. Layanan FastAPI dapat menyediakan endpoint bergaya REST. Untuk layanan web konvensional kecil, mulailah dengan REST; pilih GraphQL jika kebutuhan pemilihan data client terbukti, atau SOAP jika ada kewajiban kompatibilitas. Selalu pertimbangkan keahlian tim, biaya operasional, versioning, autentikasi, otorisasi, dan validasi masukan.

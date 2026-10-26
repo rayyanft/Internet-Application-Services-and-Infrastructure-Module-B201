@@ -33,3 +33,15 @@ Buat tabel jadwal dengan id, nama layanan, hari, dan jam contoh. Tambahkan tiga 
 - [SQLite Documentation](https://www.sqlite.org/docs.html)
 - [SQLite: SELECT](https://www.sqlite.org/lang_select.html)
 - [OWASP: SQL Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
+
+## Memilih Database
+
+| Pilihan | Apa itu | Cocok digunakan ketika |
+| --- | --- | --- |
+| [Dasar SQL dan SQLite](./README.md) | Tabel relasional dan SQL yang dipraktikkan secara lokal dengan database ringan berbasis file. | Belajar merancang skema dan query atau membuat prototipe aplikasi lokal kecil. |
+| [MySQL](./MySQL/README.md) | Server database relasional yang banyak digunakan dan didukung berbagai layanan hosting serta alat. | Aplikasi web relasional biasa membutuhkan database server yang umum dan lingkungan hosting mendukung MySQL. |
+| [PostgreSQL](./PostgreSQL/README.md) | Database relasional kaya fitur dengan dukungan SQL dan tipe data lanjutan. | Aplikasi membutuhkan query kompleks, integritas relasional kuat, atau fitur khusus PostgreSQL. |
+| [Supabase](./Supabase/README.md) | Platform aplikasi terkelola berbasis PostgreSQL, dengan layanan seperti autentikasi dan API. | Proyek membutuhkan PostgreSQL terkelola beserta layanan backend siap pakai dan menerima model deployment platform tersebut. |
+| [Firebase](./Firebase/README.md) | Platform aplikasi Google yang umumnya memakai Cloud Firestore berorientasi dokumen atau Realtime Database. | Aplikasi web atau mobile membutuhkan data realtime/dokumen terkelola dan SDK serta ekosistem Firebase sesuai kebutuhan. |
+
+Pilih berdasarkan relasi data, kebutuhan query, konsistensi, keahlian tim, hosting, biaya, dan kebutuhan migrasi. Supabase bukan mesin database relasional yang terpisah dari PostgreSQL; Firebase adalah platform dengan beberapa produk, bukan nama lain untuk satu database. Periksa harga, lokasi data, aturan akses, pencadangan, dan ketergantungan vendor sebelum digunakan di produksi.
